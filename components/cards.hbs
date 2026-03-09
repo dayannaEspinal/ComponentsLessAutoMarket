@@ -1,0 +1,14 @@
+<section class="cards-panel">
+    <div class="cards-container">
+        {{#each cards}}
+        <div class="card">
+            <img src="{{img-src}}" alt="{{img-alt}}">
+            <h3>{{title}}</h3>
+            <p>{{text}}</p>
+            {{#if button-text}}
+            <a href="{{button-link}}" class="btn">{{button-text}}</a>
+            {{/if}}
+        </div>
+        {{/each}}
+    </div>
+</section>
