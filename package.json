@@ -1,26 +1,22 @@
 {
-  "name": "componentslessk",
+  "name": "componentslessautomarket",
   "version": "1.0.0",
-  "description": "Integrantes Grupo K:\r Dayanna Ivette Espinal Mejia\r Luis Alberto Riveron Gómez\r Sharityn Fernanda Almendarez Márquez",
+  "description": "Integrantes Grupo K: Dayanna Ivette Espinal Mejia, Luis Alberto Riveron Gómez, Sharityn Fernanda Almendarez Márquez",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dayannaEspinal/ComponentsLessK.git"
+    "url": "git+https://github.com/dayannaEspinal/ComponentsLessAutoMarket.git"
   },
-  "keywords": [],
-  "author": "",
+  "homepage": "https://dayannaespinal.github.io/ComponentsLessAutoMarket/",
   "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/dayannaEspinal/ComponentsLessK/issues"
-  },
-  "homepage": "https://github.com/dayannaEspinal/ComponentsLessK#readme",
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "less": "^4.5.1",
     "vite": "^7.3.1"
   },
