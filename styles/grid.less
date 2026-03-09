@@ -1,0 +1,35 @@
+@import "variables.less";
+
+
+
+.generarColumns(@prefix, @columnas, @iteracion : 1) when(@iteracion =< @columnas) {
+    @selector: ~'.col-@{prefix}@{iteracion}';
+    @ancho: (100% / @columnas * @iteracion);
+    @offset: ~'.offset-@{prefix}@{iteracion}';
+    @{selector} {
+        flex: 0 0 @ancho;
+        max-width: @ancho;
+    }
+    @{offset} {
+        margin-left: @ancho;
+    }
+    .generarColumns(@prefix, @columnas, (@iteracion + 1))
+}
+
+.grid-container, .row {
+    display: flex;
+    flex-wrap: wrap;
+    [class*='col-'] {
+        padding: 0.2rem;
+    }
+    .generarColumns('', 12);
+    @media (min-width:720px){
+        .generarColumns('md-', 12);
+    }
+    @media (min-width:1025px){
+        .generarColumns('lg-', 12);
+    }
+    @media (min-width:1300px){
+        .generarColumns('xl-', 12);
+    }
+}

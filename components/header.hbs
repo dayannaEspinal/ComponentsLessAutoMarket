@@ -1,12 +1,13 @@
-<header class="nav-bar">
-    <div><h1>AutoMarket</h1></div>
-    <div>
+<header class="site-header">
+    <div class="navbar">
+        <h1 class="logo">{{siteName}}</h1>
+
         <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#contactanos">Contactanos</a></li>
-        </ul>
-    </nav>
+            <ul class="nav-links">
+                {{#each navLinks}}
+                    <li><a href="{{href}}">{{label}}</a></li>
+                {{/each}}
+            </ul>
+        </nav>
+    </div>
 </header>

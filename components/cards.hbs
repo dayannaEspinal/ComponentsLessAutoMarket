@@ -1,14 +1,15 @@
-<section class="cards-panel">
-    <div class="cards-container">
-        {{#each cards}}
-        <div class="card">
-            <img src="{{img-src}}" alt="{{img-alt}}">
-            <h3>{{title}}</h3>
-            <p>{{text}}</p>
-            {{#if button-text}}
-            <a href="{{button-link}}" class="btn">{{button-text}}</a>
-            {{/if}}
-        </div>
-        {{/each}}
+<section class="cards-section" id="servicios">
+  <div class="container">
+    <h2 class="section-title">Nuestros Servicios</h2>
+
+    <div class="cards-grid">
+      {{#each cards}}
+        <article class="card">
+          <img src="{{image}}" alt="{{alt}}">
+          <h3>{{title}}</h3>
+          <p>{{text}}</p>
+        </article>
+      {{/each}}
     </div>
+  </div>
 </section>
