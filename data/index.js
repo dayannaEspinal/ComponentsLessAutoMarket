@@ -1,1 +1,3 @@
-import './styles/main.less';
+import './styles/main.less'
+
+console.log("Proyecto corriendo con Vite")
