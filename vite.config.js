@@ -1,13 +1,12 @@
 import { defineConfig } from "vite";
 import handlebars from "vite-plugin-handlebars";
-import path from "path";
-import context from "./data/index.js";
+import { resolve } from "path";
 
 export default defineConfig({
+  base: "/ComponentsLessAutoMarket/",
   plugins: [
     handlebars({
-      partialDirectory: path.resolve(__dirname, "components"),
-      context
-    })
-  ]
+      partialDirectory: resolve(__dirname, "src/partials"),
+    }),
+  ],
 });
